@@ -1,7 +1,7 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - init: sudo apt update && sudo apt install -y libwebkit2gtk-4.0-dev build-essential curl wget gnupg git nano software-properties-common apt-transport-https libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev && wget https://github.com/tsl0922/ttyd/releases/download/1.6.3/ttyd.x86_64 -O /usr/bin/ttyd && chmod +x /usr/bin/ttyd
+  - init: sudo apt update && sudo apt install -y libwebkit2gtk-4.0-dev build-essential curl wget gnupg git nano software-properties-common apt-transport-https libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev && sudo wget https://github.com/tsl0922/ttyd/releases/download/1.6.3/ttyd.x86_64 -O /usr/bin/ttyd && sudo chmod +x /usr/bin/ttyd
     command: ttyd --credential user:password bash
 
 ports:
